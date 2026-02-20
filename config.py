@@ -34,6 +34,10 @@ LOG_DIR = BASE_DIR / "logs"
 LOG_DIR.mkdir(exist_ok=True)
 LOG_FILE = LOG_DIR / "focus_guard.log"
 
+# Collaboration data
+COLLAB_DIR = DATA_DIR / "collaboration"
+COLLAB_DIR.mkdir(exist_ok=True)
+
 # Sound files
 SOUND_SESSION_END = ASSETS_DIR / "session_end.mp3"
 SOUND_FOCUS_ALERT = ASSETS_DIR / "focus_alert.mp3"
@@ -84,6 +88,13 @@ FONT_NORMAL = ("Helvetica", 14)
 FONT_LABEL = ("Helvetica", 12, "bold")
 FONT_SMALL = ("Helvetica", 11)
 FONT_BUTTON = ("Helvetica", 12)
+
+# ============================================================================
+# COLLABORATION SETTINGS
+# ============================================================================
+
+COLLAB_CODE_LENGTH = 6
+COLLAB_POLL_INTERVAL_MS = 2000
 
 # ============================================================================
 # ALGORITHM SETTINGS
